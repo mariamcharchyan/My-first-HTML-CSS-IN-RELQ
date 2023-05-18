@@ -1,0 +1,100 @@
+1---------------------------
+class Person{
+    constructor(name){
+        this.name=name
+    }
+    getname(){
+        return this.name
+    }
+    setname(newname){
+        this.name=newname
+    }
+}
+const p1=new Person ("Nike")
+console.log(p1.getname())
+p1.setname("Ani")
+console.log(p1.getname())
+
+2---------------------------------
+class Person{
+    constructor(name){
+        this._name=name
+    }
+    get name(){
+        return this._name
+    }
+    set name(newname){
+        // this.name=newname
+        this._name=newname
+    }
+}
+const p1=new Person ("Nike")
+console.log(p1.name)  //Nike
+// p1.setname("Ani")
+// console.log(p1.getname())
+p1.name="Anjel"
+console.log(p1.name)  //Anjel
+
+3-------------------------------------
+class Person{
+    #name
+    constructor(name){
+        this.#name=name
+    }
+    get name(){
+        return this.#name
+    }
+    set name(newname){
+        this.#name=newname
+    }
+}
+const p1=new Person ("Nike")
+console.log(p1.name)
+console.log(p1)
+p1.name="Anjel"
+console.log(p1.name)
+console.log(p1)
+
+4-------------------------------------------
+class Person{
+    constructor(name){
+        this.name=name
+    }
+    // get name(){
+    //     return this._name
+    // }
+    // set name(newname){
+    //     this._name=newname
+    // }
+}
+const p1=new Person ("Nike")
+console.log(p1.name)
+console.log(p1)
+p1.name="Anjel"
+console.log(p1.name)
+console.log(p1)
+
+5------------set um payman karanq dnenq vor entadrenq string lini
+class Person{
+    constructor(name){
+        this.name=name
+    }
+    get name(){
+        return this._name
+    }
+    set name(newname){
+        if (typeof newname === 'string' && newname.length > 0) {
+      this._name = newname;
+    } else {
+      throw new Error('Name must be a non-empty string');
+    }
+        // this._name=newname
+    }
+}
+const p1=new Person ("Nike")
+console.log(p1.name)
+console.log(p1)
+p1.name=123
+console.log(p1.name)
+console.log(p1)
+-------throw new Error---i poxaren karanq grenq -----------console.log---

@@ -1,0 +1,78 @@
+body {
+  background-image: url("bg4.jpg");
+  padding: 10px 5px 10px 5px;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration-line: overline underline;
+    text-decoration-style: wavy;
+  }
+  
+  p {
+    font-family: initial;
+    font-size: 20px;
+    /*display: flex;
+    justify-content: center;*/
+  }
+
+  main {
+    padding: 10px 0px 0px 0px;
+  }
+  .container {
+    padding: 10px 10px 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: auto;
+  }
+  .container .box {
+    padding: 1rem;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    border: 10px solid rgb(108, 108, 131);
+    box-shadow: 5px 10px #888888;
+  }
+  .container .box img {
+    height: 300px;
+    width: 260px;
+  }
+  .boxing{ 
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px; 
+    border: 10px solid rgb(108, 108, 131);
+     
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  .demof{
+    padding: 10px 10px 10px 10px;
+    background-image: url("bg5.jpg");
+    box-shadow: 5px 10px #888888;
+    border: 10px solid rgb(108, 108, 131);
+  }
+  .nkar1 {
+    padding: 10px 10px 10px 10px;
+    background-image: url("bg5.jpg");
+    box-shadow: 5px 10px #888888;
+    border: 10px solid rgb(108, 108, 131);
+    text-align: center;
+  } 
+  .me{
+    cursor: pointer;
+  }
+  

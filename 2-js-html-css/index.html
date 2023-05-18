@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Examoles</h1>
+<ol>
+    <!-- 1 --><li>Ամեն անգամ Log Hello կոճակին սեղմելիս consol-ում կտպի Hello:<br><br><button class="button">Log Hello</button></li><br>
+    <!-- 2 --><li>Ամեն անգամ Add կոճակին սեղմելիս consol-ում կտպի փոփոխականի արժեքը և այն կավելացնի 1-ով։<br><br><button class="button2">Add</button></li><br>
+    <!-- 3 --><li>Input-ում գրվածը button-ի օգնությամբ տպել consol-ում:<br><br>
+            
+             <input type="text" placeholder="Input text..." id="myInput">
+             <button type="button" onclick="getInputValue();">Click me</button>
+           </li> <br>
+    <!-- 4 --><li>1st Number և 2nd Number դշտերում գրում ենք թիվ, ապա Multiply և Divide կոճակների օգնությամբ "The Result is" ում տպում ենք համապատասխանաբար երկու թվերի արտադրյալն ու քանորդը։<br><br><form>
+        
+        1st Number: <input type="number" id="firstNumber" /><br>
+        2nd Number: <input type="number" id="secondNumber" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="divideBy()" Value="Divide" />
+        
+        <p>The Result is :  <span id = "result"></span>
+        </p></li><br>
+    <!-- 5 --><li>Զանգվածի արժեքները ցույց տալ html-ի  "ul" և "li" թեգերի մեջ՝ օգտագործելով ցիկլ:<br>
+        <ul class ="box"></ul> 
+    </li>
+    <!-- 6 -->
+    <p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+const keys = Object.keys(person);
+
+document.getElementById("demo").innerHTML = keys;
+</script>
+</ol> 
+
+
+<Script src="main.js"></Script>
+</body>
+
+</html>

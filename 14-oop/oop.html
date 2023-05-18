@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <script>
+
+       var Person=function(m,g,t,p) {
+        let temp={};
+        temp.name=m;
+        temp.surname=g;
+        temp.age=p;
+        temp.photo=p;
+        return temp;
+
+        temp.write=function(){
+            document.write(`<h1>${this.name}${this.surname}${this.age}</h1>`)
+            document.write("<img src=>'"+this.photo+"'>")
+        }
+        return temp;
+       }
+       var c1=Person("Ann","Smit",25,"1.jpg");
+       var c2=Person("John","Smit",27,"2.jpg");
+       c1.write();
+       c2.write();
+    </script>
+</body>
+</html>
